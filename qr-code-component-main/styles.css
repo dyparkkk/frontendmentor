@@ -1,0 +1,97 @@
+:root {
+  --color-slate-900: hsl(218, 44%, 22%);
+  --color-slate-500: hsl(216, 15%, 48%);
+  --color-slate-300: hsl(212, 45%, 89%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-blue-600: #2C7DFA;
+
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+
+  --font-family: 'Outfit', sans-serif;
+  --font-size-body: 15px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-normal);
+}
+
+/* 모든 요소에 border-box 적용 */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: var(--color-slate-300, #D5E1EF);
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.content {
+  display: flex;
+  padding: var(--spacing-200, 16px) var(--spacing-200, 16px) var(--spacing-500, 40px) var(--spacing-200, 16px);
+  width: 320px;
+  
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-300, 24px);
+
+  border-radius: 20px;
+  background: var(--color-white);
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+
+  }
+
+.qr-code {
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+  background-color: var(--color-blue-600);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200, 16px);
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-200, 16px);
+  width: 100%;
+  max-width: 288px;
+}
+
+.title {
+  color: var(--color-slate-900);
+  font-size: 22px;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: 120%;
+  margin: 0;
+}
+
+.description {
+  text-align: center;
+  color: var(--color-slate-500);
+  font-size: var(--font-size-body);
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  align-self: stretch;
+}
