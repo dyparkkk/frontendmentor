@@ -103,6 +103,19 @@
   background-color: var(--color-yellow);
 }
 
+.tag {
+  font-size: 12px;
+  color: var(--color-gray-950);
+  line-height: 150%;
+  font-style: normal;
+  font-weight: 800;
+  font-family: var(--font-family-figtree);
+}
+
+.main-text {
+  color: var(--color-gray-500);
+}
+
 .author-box {
   display: flex;
   justify-content: flex-start;
