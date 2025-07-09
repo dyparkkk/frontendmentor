@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Blog preview card</title>
 
@@ -15,20 +20,30 @@
   </style>
 </head>
 <body>
+<main>
+  <div class="container">
+    <div class="card">
+      <img src="./assets/images/illustration-article.svg" alt="web-3-desktop" class="image" />
+      <div class="text-section">
+        <div class="tag-box">
+          <span class="tag text-figtree-extra-bold2">Learning</span>
+        </div>
+        <span class="text-preset-3">Published 21 Dec 2023</span>
+        <span class="text-preset-1">HTML & CSS foundations</span>
+        <span class="text-preset-2">These languages are the backbone of every website, defining structure, content, and presentation.</span>
+      </div>
+        <div class="author-box">
+          <image src="./assets/images/image-avatar.webp" alt="author-image" class="profile-image" />
+          <span class="text-preset-3-bold">Greg Hooper</span>
+        </div>
+    </div>
 
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
+    
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+</main>
 </body>
 </html>
