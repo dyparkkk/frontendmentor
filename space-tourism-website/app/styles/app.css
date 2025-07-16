@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-blue-900: hsl(230, 35%, 7%); 
+  --color-blue-300: hsl(231, 77%, 90%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-white-5: rgba(255, 255, 255, 0.05);
+
+  --spacing-1600: 128px;
+  --spacing-1200: 96px;
+  --spacing-1000: 80px;
+  --spacing-800: 64px;
+  --spacing-600: 48px;
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+  --spacing-25: 2px;
+
+  --font-size-desktop-text-preset-1: 96px;
+
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.fullscreen-bg {
+  min-height: 100vh;
+  width: 100%;
+  background: url('/app/assets/home/background-home-desktop.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.text-preset-1 {
+  color: var(--color-white);
+  font-family: "Bellefair";
+  font-size: var(--font-size-desktop-text-preset-1, 150px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text-preset-8 {
+  color: var(--color-white);
+  font-family: "Barlow Condensed";
+  font-size: var(--font-size-desktop-text-preset-8, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.text-preset-8-bold {
+  color: var(--color-white);
+  font-family: "Barlow Condensed";
+  font-size: var(--font-size-desktop-text-preset-8, 16px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.7px;
+}
