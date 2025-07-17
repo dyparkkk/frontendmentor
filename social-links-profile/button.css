@@ -1,0 +1,33 @@
+/* button component */
+button {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-150);
+  gap: var(--spacing-100);
+
+  border-radius: 8px;
+  background-color: var(--color-grey-700);
+
+  span {
+    font-size: var(--text-preset-2-bold-size);
+    line-height: var(--text-line-height);
+    letter-spacing: var(--text-letter-spacing);
+    font-weight: var(--text-preset-2-bold-weight);
+    font-family: var(--font-family);
+    color: var(--text-preset-2-bold-color);
+    font-style: normal;
+  }
+}
+
+button:hover {
+  background-color: var(--color-green);
+  span {
+    color: var(--color-grey-700);
+  }
+}
+
